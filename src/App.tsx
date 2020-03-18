@@ -13,11 +13,11 @@ const App: React.SFC = (): JSX.Element => {
   return (
     <Router>
       <NavigationBar />
-      <Switch>
-        <Content style={{ height: "calc(100vh - 4rem)", paddingTop: "4rem" }} >
+      <Content style={{ minHeight: "calc(100vh - 4rem)", paddingTop: "4rem", paddingBottom: "4rem", marginLeft: "auto", marginRight: "auto" }} >
+        <Switch>
           <Route exact path="/" component={HomePage} />
-        </Content>
-      </Switch>
+        </Switch>
+      </Content>
       <FooterBar />
     </Router>
   );

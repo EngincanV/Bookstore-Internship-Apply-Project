@@ -1,0 +1,9 @@
+{
+    "publishers": [
+        { "id": 1, "name": "Özgür Yayıncılık" },
+        { "id": 2, "name": "Can Yayınları" },
+        { "id": 3, "name": "Ötüken" },
+        { "id": 4, "name": "Dergah Yayınları" },
+        { "id": 5, "name": "Iletişim Yayınları" }
+    ]
+}

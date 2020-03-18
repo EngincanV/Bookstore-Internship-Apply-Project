@@ -1,0 +1,8 @@
+{
+    "subjects": [
+        { "id": 1, "name": "Aşk" },
+        { "id": 2, "name": "Macera - Kahramanlık" },
+        { "id": 3, "name": "Bilim Kurgu" },
+        { "id": 4, "name": "Din - Felsefe" }
+    ]
+}

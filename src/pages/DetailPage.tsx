@@ -27,7 +27,6 @@ class DetailPage extends React.Component<IDetailProps, IDetailState> {
     getPublisher = (publisherId: number) => publishers.find(p => p.id === publisherId)?.name;
 
     render() {
-        console.log(this.props.location.state.book);
         const { book } = this.props.location.state;
         return (
             <Card key={book.id} style={{ width: "calc(100vw-4rem)", margin: "4rem", textAlign: "center" }} >

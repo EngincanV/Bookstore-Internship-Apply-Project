@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { books } from '../datas/book.json';
+import books from '../datas/book.json';
 import { authors } from "../datas/author.json";
 import bookImg from '../images/book.jpg';
 import { Card } from 'antd';

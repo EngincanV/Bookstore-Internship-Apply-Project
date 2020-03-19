@@ -7,6 +7,7 @@ import FooterBar from './components/FooterBar';
 
 import { Layout } from 'antd';
 import DetailPage from './pages/DetailPage';
+import AddPage from './pages/AddPage';
 
 const { Content } = Layout;
 
@@ -18,6 +19,7 @@ const App: React.SFC = (): JSX.Element => {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/detail/:id" component={DetailPage} />
+          <Route path="/create" component={AddPage} />
         </Switch>
       </Content>
       <FooterBar />

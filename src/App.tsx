@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import FooterBar from './components/FooterBar';
 
 import { Layout } from 'antd';
+import DetailPage from './pages/DetailPage';
 
 const { Content } = Layout;
 
@@ -16,6 +17,7 @@ const App: React.SFC = (): JSX.Element => {
       <Content style={{ minHeight: "calc(100vh - 4rem)", paddingTop: "4rem", paddingBottom: "4rem", marginLeft: "auto", marginRight: "auto" }} >
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route path="/detail/:id" component={DetailPage} />
         </Switch>
       </Content>
       <FooterBar />

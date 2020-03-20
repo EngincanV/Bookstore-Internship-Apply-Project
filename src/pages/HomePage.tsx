@@ -28,18 +28,12 @@ class HomePage extends Component<{}, IHomePageState> {
         });
     }
     handleClick = (searchType: string) => {
-        console.log(searchType);
         this.setState({
             searchType,
             visible: true
         });
     }
-    handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        const { searchType } = this.state;
-        const searchText = event.target.value.toLowerCase();
-        this.setState({
-            search: searchText
-        });
+    filterBook = (searchType: string, searchText: string) => {
         switch (searchType) {
             case 'book':
                 this.setState({
@@ -71,7 +65,12 @@ class HomePage extends Component<{}, IHomePageState> {
             default:
                 break;
         }
-
+    }
+    handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+        const { searchType } = this.state;
+        const searchText = event.target.value.toLowerCase();
+        this.setState({ search: searchText });
+        this.filterBook(searchType, searchText);
     }
     getAuthor = (id: number) => {
         let author = authors.find(p => p.id === id);
